@@ -4,7 +4,7 @@ This repository contains all of my linux dotfiles.
 
 ### Install
 
-Before installing, all your own config files will be backed up.
+Before installing, all your own config files will be **backed up**.
 
 ```
 sudo ./install.sh
