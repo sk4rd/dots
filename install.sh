@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 # Run as root / sudo.
 sennheiser_gsx_1000() {
     # Disable the volume knob as a keyboard input.
@@ -10,4 +10,14 @@ sennheiser_gsx_1000() {
         /etc/udev/hwdb.d
 }
 
+fonts() {
+    # Install all the fonts located in
+    # .local/share/fonts/ directory.
+    mkdir -p ~/.local/share/fonts/
+    cp -r .local/share/fonts/* \
+        ~/.local/share/fonts
+    fc-cache -f
+}
+
 sennheiser_gsx_1000
+fonts
