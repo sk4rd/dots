@@ -12,7 +12,7 @@ sudo ./install.sh
 
 ### Uninstall
 
-This will remove all my config files, which have been applied forever.
+This will remove all my config files, which have been applied, **forever**.
 
 ```
 sudo ./uninstall.sh
